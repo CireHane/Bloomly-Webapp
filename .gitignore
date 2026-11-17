@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# react
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+# vscode
+*.vsix
+.history
+.ionide
