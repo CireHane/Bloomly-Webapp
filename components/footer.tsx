@@ -4,7 +4,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 export default function Footer(){
     return(
         <footer className='px-5 md:px-20 pt-10 pb-6 flex flex-col bg-primary-100'>
-            <div className='mb-10 grid grid-cols-0 md:grid-cols-3  gap-6'>
+            <div className='mb-10 grid grid-cols-0 md:grid-cols-3 gap-6'>
                 <div className='col flex flex-col'>
                     <a href="#" className='mb-2 flex items-center gap-1'>
                         <span> <img src="/bloomlyLogo.svg" alt="Logo" width="26" height="26" /> </span>

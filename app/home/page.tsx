@@ -1,9 +1,9 @@
 "use client"
 
-import NavigationBar from "@/components/NavigationBar"
-import Footer from "@/components/Footer"
+import NavigationBar from "@/components/navigationBar"
+import Footer from "@/components/footer"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTruck, faCartArrowDown, faSeedling, faEnvelope, faCertificate } from '@fortawesome/free-solid-svg-icons'
+import { faTruck, faChevronRight, faCartArrowDown, faSeedling, faEnvelope, faCertificate } from '@fortawesome/free-solid-svg-icons'
 
 export default function home(){
     return(
@@ -27,13 +27,13 @@ export default function home(){
                         <h1 className="mb-4 font-headline text-4xl tracking-tight font-semibold">Special Gift For Special People</h1>
                         <p className="mb-5 font-body leading-5 tracking-wide text-primary-100/90">Rangkaian buket bunga segar pilihan dengan perpanduan warna <br /> lembut, dirancang dengan penuh kasih untuk setiap momen <br /> bahagiamu.</p>
                         <span className="flex items-center">
-                            <a className="font-body font-medium px-7 py-2 mr-5 rounded-3xl transition-colors text-primary-900 bg-white" href="#">Lihat Koleksi &#10132;</a>
+                            <a className="font-body font-medium px-7 py-2 mr-5 rounded-3xl transition-colors text-primary-900 bg-white hover:bg-white/90" href="#">Lihat Koleksi &#10132;</a>
                             <span className="text-primary-100/90 mr-1"><FontAwesomeIcon icon={faTruck} /></span>
                             <p className="font-body text-sm text-primary-100/90">Tersedia Same-day Delivery</p>
                         </span>
                     </div>
                 
-                    <div className="hidden md:flex col col-span-0 md:col-span-2 h-auto bg-cover rounded-r-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/1000x600")'}}>
+                    <div className="hidden md:flex col col-span-0 md:col-span-2 h-auto bg-cover bg-center rounded-r-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/1000x600")'}}>
                     </div>
                 </div>
 
@@ -49,41 +49,41 @@ export default function home(){
 
                     <div className="grid grid-cols-0 md:grid-cols-3 gap-5">
                         {/* Card 1 */}
-                        <a className="col flex flex-col rounded-2xl bg-white">
-                            <div className="h-70 bg-cover rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/650x400")'}}>
+                        <a href="#" className="col flex flex-col rounded-2xl bg-white group transition hover:scale-102">
+                            <div className="h-70 bg-cover bg-center rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/650x400")'}}>
                             </div>
                             <div className="flex mx-5 my-6 justify-between items-center">
                                 <div className="flex flex-col justify-center">
                                     <h2 className="font-body font-bold text-xl text-black">Buket Bunga</h2>
                                     <p className="font-body text-sm text-primary-950/80">Segar mawar, tulip, & aster pilihan</p>
                                 </div>
-                                <p>next</p>
+                                <span className="transition group-hover:scale-150"><FontAwesomeIcon icon={faChevronRight} /></span>
                             </div>
                         </a>
 
                         {/* Card 2 */}
-                        <a className="col flex flex-col rounded-2xl bg-white">
-                            <div className="h-70 bg-cover rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/650x400")'}}>
+                        <a href="#" className="col flex flex-col rounded-2xl bg-white group transition hover:scale-102">
+                            <div className="h-70 bg-cover bg-center rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/650x400")'}}>
                             </div>
                             <div className="flex mx-5 my-6 justify-between items-center">
                                 <div className="flex flex-col justify-center">
                                     <h2 className="font-body font-bold text-xl text-black">Buket Uang</h2>
                                     <p className="font-body text-sm text-primary-950/80">Rangkaian Rapi bernilai estetis tinggi</p>
                                 </div>
-                                <p>next</p>
+                                <span className="transition group-hover:scale-150"><FontAwesomeIcon icon={faChevronRight} /></span>
                             </div>
                         </a>
 
                         {/* Card 3 */}
-                        <a className="col flex flex-col rounded-2xl bg-white">
-                            <div className="h-70 bg-cover rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/650x400")'}}>
+                        <a href="#" className="col flex flex-col rounded-2xl bg-white group transition hover:scale-102">
+                            <div className="h-70 bg-cover bg-center rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/650x400")'}}>
                             </div>
                             <div className="flex mx-5 my-6 justify-between items-center">
                                 <div className="flex flex-col justify-center">
                                     <h2 className="font-body font-bold text-xl text-black">Hampers</h2>
                                     <p className="font-body text-sm text-primary-950/80">Box kado terkurasi lengkap pita</p>
                                 </div>
-                                <p>next</p>
+                                <span className="transition group-hover:scale-150"><FontAwesomeIcon icon={faChevronRight} /></span>
                             </div>
                         </a>
                     </div>
@@ -96,19 +96,19 @@ export default function home(){
                             <p className="font-body text-xs tracking-wider text-primary-900/80">PALING BANYAK DIPESAN</p>
                             <h1 className="font-headline text-2xl font-semibold">Produk Terlaris</h1>
                         </div>
-                        <a href="" className="font-body font-medium text-sm tracking-wider text-primary-800/80 transition-color hover:text-primary-950">Lihat Semua &#10132;</a>
+                        <a href="#" className="font-body font-medium text-sm tracking-wider text-primary-800/80 transition hover:text-primary-950 hover:scale-105">Lihat Semua &#10132;</a>
                     </div>
 
                     <div className="grid grid-cols-0 md:grid-cols-2 lg:grid-cols-4 gap-5">
                         {/* Card 1 */}
                         <div className="col flex flex-col rounded-2xl bg-white">
-                            <div className="h-100 bg-cover rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/500x600")'}}>
+                            <div className="h-100 bg-cover bg-center rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/500x600")'}}>
                             </div>
                             <div className="mx-5 my-5 flex flex-col">
                                 <p className="font-body text-sm text-primary-950/80">Buket mawar segar</p>
                                 <h2 className="font-body font-semibold text-black">Buket Bunga Mawar</h2>
                                 <h2 className="mb-3 font-body font-semibold text-md text-primary-700">Rp. 150.000</h2>
-                                <a href="" className="w-full p-2 font-body font-semibold text-sm text-center rounded-full text-primary-700 bg-tertiary/20 hover:text-primary-900 hover:bg-tertiary/50">
+                                <a href="#" className="w-full p-2 font-body font-semibold text-sm text-center rounded-full text-primary-700 bg-tertiary/20 transition hover:text-primary-900 hover:bg-tertiary/50">
                                     <span className="mr-1"><FontAwesomeIcon icon={faCartArrowDown} /></span>
                                     <span>Pesan</span>
                                 </a>
@@ -117,13 +117,13 @@ export default function home(){
 
                         {/* Card 2 */}
                         <div className="col flex flex-col rounded-2xl bg-white">
-                            <div className="h-100 bg-cover rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/500x600")'}}>
+                            <div className="h-100 bg-cover bg-center rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/500x600")'}}>
                             </div>
                             <div className="mx-5 my-5 flex flex-col">
                                 <p className="font-body text-sm text-primary-950/80">Buket mawar segar</p>
                                 <h2 className="font-body font-semibold text-black">Buket Bunga Mawar</h2>
                                 <h2 className="mb-3 font-body font-semibold text-md text-primary-700">Rp. 150.000</h2>
-                                <a href="" className="w-full p-2 font-body font-semibold text-sm text-center rounded-full text-primary-700 bg-tertiary/20 hover:text-primary-900 hover:bg-tertiary/50">
+                                <a href="#" className="w-full p-2 font-body font-semibold text-sm text-center rounded-full text-primary-700 bg-tertiary/20 transition hover:text-primary-900 hover:bg-tertiary/50">
                                     <span className="mr-1"><FontAwesomeIcon icon={faCartArrowDown} /></span>
                                     <span>Pesan</span>
                                 </a>
@@ -132,13 +132,13 @@ export default function home(){
 
                         {/* Card 3 */}
                         <div className="col flex flex-col rounded-2xl bg-white">
-                            <div className="h-100 bg-cover rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/500x600")'}}>
+                            <div className="h-100 bg-cover bg-center rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/500x600")'}}>
                             </div>
                             <div className="mx-5 my-5 flex flex-col">
                                 <p className="font-body text-sm text-primary-950/80">Buket mawar segar</p>
                                 <h2 className="font-body font-semibold text-black">Buket Bunga Mawar</h2>
                                 <h2 className="mb-3 font-body font-semibold text-md text-primary-700">Rp. 150.000</h2>
-                                <a href="" className="w-full p-2 font-body font-semibold text-sm text-center rounded-full text-primary-700 bg-tertiary/20 hover:text-primary-900 hover:bg-tertiary/50">
+                                <a href="#" className="w-full p-2 font-body font-semibold text-sm text-center rounded-full text-primary-700 bg-tertiary/20 transition hover:text-primary-900 hover:bg-tertiary/50">
                                     <span className="mr-1"><FontAwesomeIcon icon={faCartArrowDown} /></span>
                                     <span>Pesan</span>
                                 </a>
@@ -147,13 +147,13 @@ export default function home(){
 
                         {/* Card 4 */}
                         <div className="col flex flex-col rounded-2xl bg-white">
-                            <div className="h-100 bg-cover rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/500x600")'}}>
+                            <div className="h-100 bg-cover bg-center rounded-t-2xl text-center overflow-hidden" style={{backgroundImage: 'url("https://placehold.co/500x600")'}}>
                             </div>
                             <div className="mx-5 my-5 flex flex-col">
                                 <p className="font-body text-sm text-primary-950/80">Buket mawar segar</p>
                                 <h2 className="font-body font-semibold text-black">Buket Bunga Mawar</h2>
                                 <h2 className="mb-3 font-body font-semibold text-md text-primary-700">Rp. 150.000</h2>
-                                <a href="" className="w-full p-2 font-body font-semibold text-sm text-center rounded-full text-primary-700 bg-tertiary/20 hover:text-primary-900 hover:bg-tertiary/50">
+                                <a href="#" className="w-full p-2 font-body font-semibold text-sm text-center rounded-full text-primary-700 bg-tertiary/20 transition hover:text-primary-900 hover:bg-tertiary/50">
                                     <span className="mr-1"><FontAwesomeIcon icon={faCartArrowDown} /></span>
                                     <span>Pesan</span>
                                 </a>

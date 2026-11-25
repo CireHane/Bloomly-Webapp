@@ -20,17 +20,16 @@ export default function NavigationBar(){
             </div>
 
             <nav>
-                <a className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100" href="#">Home</a>
-                <a className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100" href="#">Kategori</a>
-                <a className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100" href="#">Custom Order</a>
-                <a className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100" href="#">Pesanan Saya</a>
+                <a href="/home" className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100">Home</a>
+                <a href="/category" className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100">Kategori</a>
+                <a href="#" className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100">Pesanan Saya</a>
             </nav>
 
             <div className='flex items-center gap-space-xs'>
                 <a href="#" className='mx-1 h-10 w-10 grow-0 shrink-0 rounded-full flex items-center justify-center text-primary-600 transition-colors hover:bg-primary-600 hover:text-tertiary-100'>
                     <FontAwesomeIcon icon={faClockRotateLeft} />
                 </a>
-                <a href="#" className='mx-1 h-10 w-10 grow-0 shrink-0 rounded-full flex items-center justify-center text-primary-600 transition-colors hover:bg-primary-600 hover:text-tertiary-100'>
+                <a href="/cart" className='mx-1 h-10 w-10 grow-0 shrink-0 rounded-full flex items-center justify-center text-primary-600 transition-colors hover:bg-primary-600 hover:text-tertiary-100'>
                     <FontAwesomeIcon icon={faCartShopping} />
                 </a>
                 <a href="#" className='ml-1 h-10 w-10 grow-0 shrink-0 rounded-full bg-primary-600 flex items-center justify-center text-tertiary-100 transition-colors hover:bg-primary-800 hover:text-tertiary-200'>

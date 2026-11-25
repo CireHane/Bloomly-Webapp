@@ -1,4 +1,4 @@
-import NavigationBar from "@/components/NavigationBar";
+import NavigationBar from "@/components/navigationBar";
 import { redirect } from "next/navigation";
 
 export default function root() {
