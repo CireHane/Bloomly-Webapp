@@ -5,7 +5,7 @@ export default function NavigationBar(){
     return (
     <header className="fixed top-0 left-0 right-0 w-full z-10 bg-primary-100/80 backdrop-blur drop-shadow-md">
         <div className="h-16 mx-0 lg:mx-10 flex items-center justify-between gap-3">
-            <a href="#" className='flex items-center justify-between gap-1'>
+            <a href="/home" className='flex items-center justify-between gap-1'>
                 <span> <img src="/bloomlyLogo.svg" alt="Logo" width="26" height="26" /> </span>
                 <span className="font-headline text-primary-700 tracking-tight font-bold text-2xl">Bloomly</span>
             </a>
@@ -22,7 +22,7 @@ export default function NavigationBar(){
             <nav>
                 <a href="/home" className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100">Home</a>
                 <a href="/category" className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100">Kategori</a>
-                <a href="#" className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100">Pesanan Saya</a>
+                <a href="/products" className="font-body font-medium text-md px-4 py-2 rounded-3xl transition-colors hover:bg-primary hover:text-tertiary-100">Cari Produk</a>
             </nav>
 
             <div className='flex items-center gap-space-xs'>
