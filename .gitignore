@@ -26,6 +26,7 @@
 
 # python
 __pycache__/
+.venv/
 
 # debug
 npm-debug.log*
